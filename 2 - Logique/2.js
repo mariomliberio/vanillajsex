@@ -42,14 +42,14 @@ scores();
 // EX 3 Mettre au Pluriel.
 
 let mot = "poire";
-let motnum = 4;
+let motnum = 1;
 let motresult = "";
 
 function pluralwords() {
   if (motnum > 1) {
     console.log((motresult = mot + "s"));
   } else if (motnum == 1) {
-    console.log((mot = motresult));
+    console.log((motresult = mot));
   }
 }
 pluralwords();
