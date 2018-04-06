@@ -57,3 +57,33 @@ mainCharacter = {
 };
 
 mainCharacter.attack();
+
+// Bonus
+
+class adversary {
+    constructor(name, level, life, weapon, attack, recieveDamage){
+        this.name = name;
+        this.level = level;
+        this.life = life;
+        this.weapon = weapon;
+        this.attack = attack;
+        this.recieveDamage = recieveDamage;
+    }
+}
+
+let main = new adversary(
+    "Mario",
+    69,
+    100,
+    {name:"BFG", damage:"9"},
+    function(){console.log(this.name + " attacks " + opponent.name + " with " + this.weapon.name + " and inflicts " + this.level * this.weapon.damage + " damage, now" + opponent.name + " has " + this.level * this.weapon.damage - opponent.life + " life points.");},
+    function(){});
+let opponent = new adversary(
+    "Red",
+    23,
+    100,
+    {name:"Gun", damage: "3"},
+    function(){},
+    function(){});
+main.attack();
+// BONUS IS BROKE U BETTA FIXIT
